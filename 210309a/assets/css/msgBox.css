@@ -1,0 +1,17 @@
+@font-face{
+    font-family: "ubuntu";
+    src: url(../ubuntu.ttf);
+}
+
+.msgBox{
+    position: absolute;
+    border-radius: 12px;
+    margin: 0;
+    padding: 10px;
+}
+
+.msgPrompt{
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+}

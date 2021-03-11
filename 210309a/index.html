@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ABC校园通</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/public.css">
+        <link rel="stylesheet" href="assets/css/index.css">
+        <link rel="shortcut icon" href="assets/images/logo.ico">
+        <script src="assets/javascript/js.cookie.js"></script>
+        <script src="assets/javascript/jquery-3.5.1.min.js"></script>
+        <script src="assets/javascript/public.js"></script>
+    </head>
+    <body onload="checkCookie()">
+        <div id="navBar">
+            <img src="assets/images/logo.png" alt="error" id="bannerLogo" onclick="self.location='index.html'">
+            <div id="navBarBox">
+                <div onclick="self.location='index.html'" class="navButton"><a id="currentFocus">首页</a></div>
+                <div onclick="self.location='accessories.html'" class="navButton"><a>下单</a></div>
+                <div onclick="self.location='insurances.html'" class="navButton"><a>接单</a></div>
+                <div onclick="self.location='insurances.html'" class="navButton"><a>任务</a></div>
+                <div id="barIndicator"></div>  
+            </div>
+            <div onclick="self.location='login.html'" id="loginRegButton" class="navButton">登录 / 注册</div>
+            <div id="myAccountBox" class="navButton">abaaba</div>
+        </div>
+        <div id="contentBox">
+            <div id="leftContent">
+                <div>news #1</div>
+                <div>news #2</div>
+                <div>news #3</div>
+                <div>news #4</div>
+                <div>news #5</div>
+            </div>
+            <div id="rightContent">
+                <img id="eventImg" alt="event image" src="assets/images/event.png">
+                <p>event descriptions</p>
+            </div>
+        </div>
+        <div id="footerBox">
+            <img src="assets/images/logo.png" alt="error" id="footerLogo" onclick="self.location='index.html'">
+            <p>CI 101 - Team 13</p>
+        </div>
+    </body>
+</html>

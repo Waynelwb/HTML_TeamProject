@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>登录 ABC校园通</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/public.css">
+        <link rel="stylesheet" href="assets/css/login.css">
+        <link rel="stylesheet" href="assets/css/msgBox.css">
+        <link rel="shortcut icon" href="assets/images/logo.ico">
+        <script src="assets/javascript/js.cookie.js"></script>
+        <script src="assets/javascript/jquery-3.5.1.min.js"></script>
+        <script src="assets/javascript/login.js"></script>
+        <script src="assets/javascript/msgBox.js"></script>
+    </head>
+    <body>
+        <img src="assets/images/back.png" alt="error" id="back" onclick="history.back(-1);">
+        <div id="loginBox">
+            <h1>登录</h1>
+            <form>
+                <div class="login-field">
+                    <input type="text" name="user" required="" class="inputBox" id="user" maxlength="10" title="请填写用户名">
+                    <label class="tag">用户名</label>
+                </div>
+                <div class="login-field">
+                    <input type="password" name="pass" required="" class="inputBox" id="pass" maxlength="14" title="请设置密码">
+                    <label class="tag">密码</label>
+                    <img src="assets/images/eye.png" alt="error" id="eye" draggable="false">
+                    <p class="options">自动登录</p>
+                    <p id="forgotPass" onclick="self.location='forgot.html'" class="options">忘记密码</p>
+                    <div class="checkBox">
+                        <input type="checkbox" id="autoLogin" checked="1">
+                        <label for="autoLogin" class="sliderRail"></label>
+                        <label for="autoLogin" class="slider" id="slider1"></label>
+                    </div>
+                    <div id="login" onclick="checkValidity()"><p>登录</p></div>
+                </div>
+            </form>
+            <a id="register" href="register.html">没有账号 点此注册</a>
+        </div>
+        <div id="footerBox">
+            <img src="assets/images/logo.png" alt="error" id="footerLogo" onclick="self.location='index.html'">
+            <p>CI 101 - Team 13</p>
+        </div>
+    </body>
+</html>

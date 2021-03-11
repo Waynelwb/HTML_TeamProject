@@ -1,0 +1,38 @@
+* {
+    transition: all 0.2s;
+}
+
+#buttonBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#buttonBox input{
+    height: 180px;
+    width: 45%;
+    margin: 30px 0;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(40,40,40);
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+#buttonBox input:hover{
+    background-color: rgb(60,60,60);
+}
+
+#buttonBox input:focus{
+    background-color: rgb(80,80,80);
+    box-shadow: 0 0 0 5px  rgb(16, 187, 96);
+    font-size: 21px;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,122 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2020-11-20, 16:02:40
+    Author     : theta405
+*/
+*{
+    transition: all 0.2s;
+}
+
+@font-face{
+    font-family: "ubuntu";
+    src: url(../ubuntu.ttf);
+}
+
+#contentBox{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#footerBox{
+    background-color: rgb(20,20,20);
+    float: left;
+    position: relative;
+    height: 74px;
+    width: 100%;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#footerBox p{
+    position: absolute; 
+    right: 20px; 
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: 30px;
+    color: white;
+}
+
+#loginRegButton, #myAccountBox{
+    float: right;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 0.1px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: rgb(20,20,20);
+    font-family: ubuntu;
+}
+
+#navBarBox{
+    float: left;
+    background-color: rgb(20,20,20); 
+    top: 0; 
+}
+
+#barIndicator{
+    height: 4px;
+    position: absolute;
+    border-radius: 10px;
+}
+
+#bannerLogo{
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    margin: 0 20px;
+    border: none;
+    height: 38px;
+    cursor: pointer;
+}
+
+#bannerLogo:hover{
+    filter: brightness(0.8);
+}
+
+#footerLogo{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 20px;
+    border: none;
+    height: 38px;
+    cursor: pointer;
+}
+
+#footerLogo:hover{
+    filter: brightness(0.8);
+}
+
+.navButton{
+    float: left;
+    padding: 20px 20px;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.navButton a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    padding: 0;
+    letter-spacing: 1px;
+    margin: 0;
+    border: none;
+}

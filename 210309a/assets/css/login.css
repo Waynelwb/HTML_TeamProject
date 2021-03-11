@@ -1,0 +1,206 @@
+* {
+    transition: all 0.5s ease;
+}
+
+@font-face{
+    font-family: "ubuntu";
+    src: url(../ubuntu.ttf);
+}
+
+#loginBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 480px;
+    width: 380px;
+    background-color: rgb(35,35,35);
+    border-radius: 25px;
+}
+
+#loginBox h1{
+    padding: 0;
+	text-align: center;
+	color: white;
+    letter-spacing: 10px;
+    margin-top: 35px;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+#back{
+    height: 22px;
+    cursor: pointer;
+    position: absolute;
+    margin: 20px;
+}
+
+#back:hover{
+    filter: brightness(0.8);
+}
+
+#eye{
+    height: 16px;
+    top: 50px;
+    position: absolute;
+    right: 1px;
+}
+
+#eye:hover{
+    filter: brightness(0.8);
+}
+
+#eye:active{
+    filter: brightness(0.5);
+}
+
+#login{
+    background-color: rgba(210,0,0,0.9);
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    cursor: pointer;
+    float: left;
+    position: relative;
+}
+
+#login:hover{
+    background-color: rgba(240,0,0,0.9);
+}
+
+#login p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 22px;
+    letter-spacing: 6px;
+	color: white;
+    margin: 0;
+}
+
+#autoLogin{
+    visibility: hidden;
+}
+
+.login-field{
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%,0);
+    position: relative;
+}
+
+#register{
+    color: rgb(140, 140, 140);
+    font-size: 21px;
+    text-decoration: none;
+    position: absolute;
+    margin-top: 165px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+#register:hover{
+    color: rgb(160, 160, 160);
+    letter-spacing: 0.5px;
+}
+
+.login-field .inputBox{
+    width: 100%;
+	padding: 10px 0;
+	font-size: 20px;
+	color: white;
+	margin-top: 35px;
+	border: none;
+	border-bottom: 2px solid rgba(255,255,255,0.6);
+	outline: none;
+	background: transparent;
+    font-family: ubuntu;
+}
+
+.options{
+    font-size: 18px;
+    float: left;
+    color: white;
+    height: 24px;
+    margin: 29px 0;
+}
+
+#forgotPass{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+#forgotPass:hover{
+    color: rgba(240,0,0,0.9);
+}
+
+.tag {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    font-size: 20px;
+    color: white;
+    pointer-events: none;
+    transition: .5s;		
+}
+
+.login-field .inputBox:focus ~ .tag, 
+.login-field .inputBox:valid ~ .tag {
+	transform: translate(0,-80%);
+	font-size: 16px;
+}
+
+.login-field .inputBox:focus{
+    border-bottom: 2px solid rgba(255,255,255,1);
+}
+
+.checkBox{
+    width: 46px;
+    height: 22px;
+    margin: 30px 10px;
+    background: transparent;
+    position: relative;
+    float: left;
+}
+
+.sliderRail{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 35px;
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(70, 70, 70);
+    cursor: pointer;
+    left: 0;
+    top: 0;
+}
+
+.slider{
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    left: 3px;
+    top: 50%;
+    transform: translate(0,-50%);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(140, 140, 140);
+    cursor: pointer;
+}
+
+#autoLogin:checked + .sliderRail{
+    background-color: rgba(69, 189, 39, 0.9);
+}
+
+#autoLogin:checked ~ #slider1{
+    left: 27px;
+    background-color: rgb(216, 255, 206);
+}
